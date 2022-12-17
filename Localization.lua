@@ -2,8 +2,8 @@
 
 	The MIT License (MIT)
 
-    Copyright (c) 2022 Lucas Vienna (Avyiel) <dev@lucasvienna.dev>
-    Copyright (c) 2022 Snowshock <http://github.com/Kazan/>
+	Copyright (c) 2022 Lucas Vienna (Avyiel) <dev@lucasvienna.dev>
+	Copyright (c) 2022 Snowshock <http://github.com/Kazan/>
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
@@ -41,57 +41,57 @@ local GetLocale = _G.GetLocale
 -- Do not modify the function,
 -- just the locales in the table below!
 local L = (function(tbl, defaultLocale)
-    local gameLocale = GetLocale() -- The locale currently used by the game client.
-    local L = tbl[gameLocale] or tbl[defaultLocale] -- Get the localization for the current locale, or use your default.
-    -- Replace the boolean 'true' with the key,
-    -- to simplify locale creation and reduce space needed.
-    for i in pairs(L) do
-        if (L[i] == true) then
-            L[i] = i
-        end
-    end
-    -- If the game client is in another locale than your default,
-    -- fill in any missing localization in the client's locale
-    -- with entries from your default locale.
-    if (gameLocale ~= defaultLocale) then
-        for i, msg in pairs(tbl[defaultLocale]) do
-            if (not L[i]) then
-                -- Replace the boolean 'true' with the key,
-                -- to simplify locale creation and reduce space needed.
-                L[i] = (msg == true) and i or msg
-            end
-        end
-    end
-    return L
+	local gameLocale = GetLocale() -- The locale currently used by the game client.
+	local L = tbl[gameLocale] or tbl[defaultLocale] -- Get the localization for the current locale, or use your default.
+	-- Replace the boolean 'true' with the key,
+	-- to simplify locale creation and reduce space needed.
+	for i in pairs(L) do
+		if (L[i] == true) then
+			L[i] = i
+		end
+	end
+	-- If the game client is in another locale than your default,
+	-- fill in any missing localization in the client's locale
+	-- with entries from your default locale.
+	if (gameLocale ~= defaultLocale) then
+		for i, msg in pairs(tbl[defaultLocale]) do
+			if (not L[i]) then
+				-- Replace the boolean 'true' with the key,
+				-- to simplify locale creation and reduce space needed.
+				L[i] = (msg == true) and i or msg
+			end
+		end
+	end
+	return L
 end)({
-    -- ENTER YOUR LOCALIZATION HERE!
-    -----------------------------------------------------------
-    -- * Note that you MUST include a full table for your primary/default locale!
-    -- * Entries where the value (to the right) is the boolean 'true',
-    --   will use the key (to the left) as the value instead!
-    ["enUS"] = {
-        ["Move |cffcc1a1aElementals|r"] = true,
-        ["Move |cffcc1a1aElementals|r into their own category"] = true,
-        ["|cffcc1a1aElementals|r"] = true,
-    },
-    ["deDE"] = {},
-    ["esES"] = {
-        ["Mover |cffcc1a1aElementales|r"] = true,
-        ["Mover |cffcc1a1aElementales|r a su propia categoría"] = true,
-        ["|cffcc1a1aElementales|r"] = true,
-    },
-    ["esMX"] = {},
-    ["frFR"] = {},
-    ["itIT"] = {},
-    ["koKR"] = {},
-    ["ptPT"] = {},
-    ["ruRU"] = {},
-    ["zhCN"] = {},
-    ["zhTW"] = {}
+	-- ENTER YOUR LOCALIZATION HERE!
+	-----------------------------------------------------------
+	-- * Note that you MUST include a full table for your primary/default locale!
+	-- * Entries where the value (to the right) is the boolean 'true',
+	--   will use the key (to the left) as the value instead!
+	["enUS"] = {
+		["Move |cffcc1a1aElementals|r"] = true,
+		["Move |cffcc1a1aElementals|r into their own category"] = true,
+		["|cffcc1a1aElementals|r"] = true,
+	},
+	["deDE"] = {},
+	["esES"] = {
+		["Mover |cffcc1a1aElementales|r"] = true,
+		["Mover |cffcc1a1aElementales|r a su propia categoría"] = true,
+		["|cffcc1a1aElementales|r"] = true,
+	},
+	["esMX"] = {},
+	["frFR"] = {},
+	["itIT"] = {},
+	["koKR"] = {},
+	["ptPT"] = {},
+	["ruRU"] = {},
+	["zhCN"] = {},
+	["zhTW"] = {}
 
-    -- The primary/default locale of your addon.
-    -- * You should change this code to your default locale.
-    -- * Note that you MUST include a full table for your primary/default locale!
+	-- The primary/default locale of your addon.
+	-- * You should change this code to your default locale.
+	-- * Note that you MUST include a full table for your primary/default locale!
 }, "enUS")
 
 addon.L = L
