@@ -1,0 +1,17 @@
+## Interface: 100002
+
+## Title: AdiBags - Dragonflight - Elementals
+## Notes: AdiBags filter for Dragonflight Elementals.
+## Author: Snowshock
+## Version: v1.0.0
+
+## DefaultState: Enabled
+## Dependencies: AdiBags
+
+## X-Date: 2022-12-17T115:00:00Z
+## X-Category: Bags & Inventory
+## X-License: MIT
+
+Database.lua
+Localization.lua
+Main.lua
