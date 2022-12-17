@@ -31,9 +31,9 @@ local _, addon = ...
 -----------------------------------------------------------
 addon.db = {
 	elementals = {
-		name = "Move |cff0070ddElementals|r",
-		desc = "Move |cff0070ddElementals|r into their own category",
-		category = "|cff0070ddElementals|r",
+		name = "Move |cffcc1a1aElementals|r",
+		desc = "Move |cffcc1a1aElementals|r into their own category",
+		category = "|cffcc1a1aElementals|r",
 		items = {
 			190327, -- Awakened Air
 			190331, -- Awakened Decay

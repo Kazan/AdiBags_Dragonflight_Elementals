@@ -70,15 +70,15 @@ end)({
     -- * Entries where the value (to the right) is the boolean 'true',
     --   will use the key (to the left) as the value instead!
     ["enUS"] = {
-        ["Move |cff0070ddElementals|r"] = true,
-        ["Move |cff0070ddElementals|r into their own category"] = true,
-        ["|cff0070ddElementals|r"] = true,
+        ["Move |cffcc1a1aElementals|r"] = true,
+        ["Move |cffcc1a1aElementals|r into their own category"] = true,
+        ["|cffcc1a1aElementals|r"] = true,
     },
     ["deDE"] = {},
     ["esES"] = {
-        ["Mover |cff0070ddElementales|r"] = true,
-        ["Mover |cff0070ddElementales|r a su propia categoría"] = true,
-        ["|cff0070ddElementales|r"] = true,
+        ["Mover |cffcc1a1aElementales|r"] = true,
+        ["Mover |cffcc1a1aElementales|r a su propia categoría"] = true,
+        ["|cffcc1a1aElementales|r"] = true,
     },
     ["esMX"] = {},
     ["frFR"] = {},
