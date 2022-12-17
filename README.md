@@ -1,4 +1,5 @@
-#AdiBags Dragonflight Elementals Filter
+AdiBags Dragonflight Elementals Filter
+--
 
 Dead simple Adibag Filter to put Elementals into their own category.
 
