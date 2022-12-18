@@ -12,6 +12,9 @@
 ## X-Category: Bags & Inventory
 ## X-License: MIT
 
+## X-Curse-Project-ID: 740036
+## X-Wago-ID: R4N2BWNL
+
 Database.lua
 Localization.lua
 Main.lua
